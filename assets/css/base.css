@@ -1,0 +1,14 @@
+:root {
+    --light-blue: #EAF2FD;
+    --blue: #2A7AE4;
+    --white: #fff;
+    --light-grey: #F5F5F5;
+    --dark-grey: #A2A2A2;
+    --black: #464646;
+    
+    --raleway: 'Raleway', sans-serif;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+}
