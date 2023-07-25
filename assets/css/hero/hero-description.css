@@ -1,0 +1,12 @@
+.hero__description {
+    color: var(--light-grey);
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__description {
+        font-size: 1.3rem;
+        font-weight: var(--semibold);
+        color: var(--white);
+    }
+}

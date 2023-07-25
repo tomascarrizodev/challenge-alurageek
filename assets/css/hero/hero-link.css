@@ -1,0 +1,12 @@
+.hero__link {
+    text-decoration: none;
+    font-family: var(--raleway);
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__link {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+}

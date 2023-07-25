@@ -10,3 +10,13 @@
 .header__logo--title {
     height: .8rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .header__logo--logo {
+        width: 2.6rem;
+    }
+
+    .header__logo--title {
+        height: 1.2rem;
+    }
+}

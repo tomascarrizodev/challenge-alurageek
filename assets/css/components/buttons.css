@@ -2,6 +2,7 @@
     border: none;
     background: transparent;
     padding: .7rem;
+    transition: .5s all;
 }
 
 .btn--primary {
@@ -10,9 +11,17 @@
     font-weight: var(--medium);
 }
 
+.btn--primary:hover {
+    background: var(--dark-blue);
+}
+
 .btn--secondary {
     background: var(--white);
     color: var(--blue);
     border: 1px solid var(--blue);
     font-weight: var(--medium);
+}
+
+.btn--secondary:hover {
+    background: var(--light-grey);
 }

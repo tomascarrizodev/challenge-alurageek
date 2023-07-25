@@ -17,7 +17,6 @@
 @media screen and (min-width: 1024px) {
     .header__container {
         margin: 0 auto;
-        max-width: 1136px;
         padding: 2rem 3rem;
         justify-content: start;
     }
@@ -25,6 +24,7 @@
 
 @media screen and (min-width: 1440px) {
     .header__container {
+        max-width: 1136px;
         padding: 2rem 0;
     }
 }
