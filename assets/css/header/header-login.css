@@ -1,0 +1,17 @@
+.header__login {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: var(--semibold);
+    flex-grow: 1;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .header__login {
+        order: 3;
+        flex-grow: 0;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,8 @@
+.header__submit {
+    border: none;
+    background: transparent;
+}
+
+.header__submit--svg {
+    width: 1.7rem;
+}
