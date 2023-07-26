@@ -1,0 +1,11 @@
+.form__textarea {
+    border: none;
+    background: transparent;
+    font-family: var(--raleway);
+    width: 100%;
+}
+
+
+.form__textarea:focus {
+    outline: none;
+}

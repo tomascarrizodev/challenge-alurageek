@@ -1,0 +1,17 @@
+.form__external {
+    position: relative;
+    padding: 1rem;
+    background: var(--white);
+    border-bottom: 1px solid lightgrey;
+}
+
+.form__external::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background: var(--blue);
+    z-index: 2;
+}

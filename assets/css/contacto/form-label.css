@@ -1,0 +1,5 @@
+.form__label {
+    position: absolute;
+    color: var(--dark-grey);
+    font-size: 18px;
+}

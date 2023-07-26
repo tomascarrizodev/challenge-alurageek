@@ -1,0 +1,6 @@
+.form__title {
+    color: var(--black);
+    font-weight: var(--bold);
+    font-size: 1rem;
+    margin-bottom: 2px;
+}

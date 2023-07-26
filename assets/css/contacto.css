@@ -1,0 +1,33 @@
+.contacto {
+    background: var(--light-blue);
+}
+
+.contacto__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 2rem;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .contacto__container {
+        flex-direction: row;
+        padding: 2rem;
+        gap: 5rem;
+    }   
+}
+
+@media screen and (min-width: 1440px) {
+    .contacto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contacto__container {
+        width: 1136px;
+        padding: 5rem 0 4rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

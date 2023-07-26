@@ -3,9 +3,14 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1rem;
+    scrollbar-width: 0;
 }
 
-@media screen and (min-width: 1024px) {
+.line__container::-webkit-scrollbar {
+    width: 0;
+}
+
+@media screen and (min-width: 768px) {
     .line__container {
         flex-wrap: nowrap;
         overflow-x: auto;

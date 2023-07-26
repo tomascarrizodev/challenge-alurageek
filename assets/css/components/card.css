@@ -1,8 +1,20 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 10rem;
+    width: 8rem;
     gap: .5rem;
+}
+
+@media screen and (min-width: 360px) {
+    .card {
+        width: 9rem;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .card {
+        width: 10rem
+    }
 }
 
 @media screen and (min-width: 1024px) {

@@ -1,0 +1,11 @@
+.form__submit {
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+    .form__submit {
+        width: fit-content;
+    }
+}

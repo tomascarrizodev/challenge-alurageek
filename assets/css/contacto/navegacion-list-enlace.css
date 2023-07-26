@@ -1,0 +1,11 @@
+.navegacion__list__enlace {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: var(--medium);
+    font-size: 18px;
+    transition: all .5s;
+}
+
+.navegacion__list__enlace:hover {
+    color: #000;
+}
