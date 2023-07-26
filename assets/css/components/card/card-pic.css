@@ -1,0 +1,15 @@
+.card__pic {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 176px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card__pic {
+        height: auto;
+        width: auto;
+    }
+}

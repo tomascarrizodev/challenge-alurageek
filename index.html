@@ -15,6 +15,14 @@
     <!-- Estilos Componentes -->
     <link rel="stylesheet" href="./assets/css/components/buttons.css">
 
+    <link rel="stylesheet" href="./assets/css/components/card.css">
+    <link rel="stylesheet" href="./assets/css/components/card/card-button.css">
+    <link rel="stylesheet" href="./assets/css/components/card/card-description.css">
+    <link rel="stylesheet" href="./assets/css/components/card/card-img.css">
+    <link rel="stylesheet" href="./assets/css/components/card/card-pic.css">
+    <link rel="stylesheet" href="./assets/css/components/card/card-price.css">
+    <link rel="stylesheet" href="./assets/css/components/card/card-title.css">
+
     <!-- Estilos genéricos -->
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/header/header-container.css">
@@ -29,6 +37,16 @@
     <link rel="stylesheet" href="./assets/css/hero/hero-description.css">
     <link rel="stylesheet" href="./assets/css/hero/hero-link.css">
     <link rel="stylesheet" href="./assets/css/hero/hero-title.css">
+
+    <link rel="stylesheet" href="./assets/css/productos.css">
+
+    <link rel="stylesheet" href="./assets/css/line.css">
+    <link rel="stylesheet" href="./assets/css/line/line-button.css">
+    <link rel="stylesheet" href="./assets/css/line/line-container.css">
+    <link rel="stylesheet" href="./assets/css/line/line-header.css">
+    <link rel="stylesheet" href="./assets/css/line/line-title.css">
+
+
 </head>
 
 <body>
@@ -106,47 +124,282 @@
 
         <!-- Contenedor de Lineas de productos -->
         <section class="productos">
+            <div class="productos__container">
 
-            <!-- Categorias de productos -->
-            <article class="line">
+                <!-- Categorias de productos -->
+                <article class="line">
 
-                <!-- Encabezado de Linea -->
-                <header class="line__header">
-                    <h4 class="line__title">Star Wars</h4>
-                    <a href="#" class="line__button">
-                        <span class="line__seemore">Ver todo</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <g clip-path="url(#clip0_1_509)">
-                                <path
-                                    d="M2.66634 8.66666L10.7797 8.66667L7.05301 12.3933L7.99967 13.3333L13.333 8L7.99968 2.66667L7.05968 3.60667L10.7797 7.33333L2.66634 7.33333L2.66634 8.66666Z"
-                                    fill="#2A7AE4" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1_509">
-                                    <rect width="16" height="16" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </header>
+                    <!-- Encabezado de Linea -->
+                    <header class="line__header">
+                        <h4 class="line__title">Star Wars</h4>
+                        <a href="#" class="line__button">
+                            <span class="line__button--title">Ver todo</span>
+                            <svg class="line__button--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_509)">
+                                    <path
+                                        d="M2.66634 8.66666L10.7797 8.66667L7.05301 12.3933L7.99967 13.3333L13.333 8L7.99968 2.66667L7.05968 3.60667L10.7797 7.33333L2.66634 7.33333L2.66634 8.66666Z"
+                                        fill="#2A7AE4" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_509">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </header>
 
-                <!-- Contenedor de productos -->
-                <div class="line__container">
+                    <!-- Contenedor de productos -->
+                    <div class="line__container">
 
-                    <!-- Cartas de productos -->
-                    <div class="line__card">
-                        <picture class="line__pic">
-                            <img src="#" alt="#" class="line__img" />
-                        </picture>
-                        <div class="line__card__description">
-                            <h5 class="line__card__title">Producto XYZ</h5>
-                            <span class="line__card__price">R$ 60,00</span>
-                            <a href="#" class="line__card__button">Ver producto</a>
+                        <!-- Cartas de productos -->
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/starwars-1.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
                         </div>
-                    </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/starwars-2.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/starwars-3.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/starwars-4.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/starwars-5.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/starwars-6.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
 
-                </div>
-            </article>
+                    </div>
+                </article>
+
+                <article class="line">
+
+                    <!-- Encabezado de Linea -->
+                    <header class="line__header">
+                        <h4 class="line__title">Consolas</h4>
+                        <a href="#" class="line__button">
+                            <span class="line__button--title">Ver todo</span>
+                            <svg class="line__button--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_509)">
+                                    <path
+                                        d="M2.66634 8.66666L10.7797 8.66667L7.05301 12.3933L7.99967 13.3333L13.333 8L7.99968 2.66667L7.05968 3.60667L10.7797 7.33333L2.66634 7.33333L2.66634 8.66666Z"
+                                        fill="#2A7AE4" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_509">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </header>
+
+                    <!-- Contenedor de productos -->
+                    <div class="line__container">
+
+                        <!-- Cartas de productos -->
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/consolas-1.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/consolas-2.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/consolas-3.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/consolas-4.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/consolas-5.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/consolas-6.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="line">
+
+                    <!-- Encabezado de Linea -->
+                    <header class="line__header">
+                        <h4 class="line__title">Diversos</h4>
+                        <a href="#" class="line__button">
+                            <span class="line__button--title">Ver todo</span>
+                            <svg class="line__button--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_509)">
+                                    <path
+                                        d="M2.66634 8.66666L10.7797 8.66667L7.05301 12.3933L7.99967 13.3333L13.333 8L7.99968 2.66667L7.05968 3.60667L10.7797 7.33333L2.66634 7.33333L2.66634 8.66666Z"
+                                        fill="#2A7AE4" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_509">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </header>
+
+                    <!-- Contenedor de productos -->
+                    <div class="line__container">
+
+                        <!-- Cartas de productos -->
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/random-1.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/random-2.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/random-3.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/random-4.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/random-5.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture class="card__pic">
+                                <img src="./assets/products/random-6.png" alt="#" class="card__img" />
+                            </picture>
+                            <div class="card__description">
+                                <h5 class="card__title">Producto XYZ</h5>
+                                <span class="card__price">R$ 60,00</span>
+                                <a href="#" class="card__button">Ver producto</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- Seccion de Contacto -->

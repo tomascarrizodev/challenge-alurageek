@@ -1,0 +1,12 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    gap: .5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: auto;
+    }
+}

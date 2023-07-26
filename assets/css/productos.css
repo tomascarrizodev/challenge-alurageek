@@ -1,0 +1,24 @@
+.productos__container {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .productos__container {
+        padding: 3rem 2rem;
+        gap: 3rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .productos {
+        display: flex;
+        justify-content: center;
+    }
+    .productos__container {
+        width: 1136px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

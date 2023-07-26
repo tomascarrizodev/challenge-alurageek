@@ -1,0 +1,25 @@
+.line__button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: var(--bold);
+    gap: 0.5rem;
+}
+
+.line__button:hover .line__button--title {
+    color: var(--dark-blue);
+}
+
+.line__button:hover .line__button--svg path {
+    fill: var(--dark-blue);
+}
+
+.line__button--title {
+    color: var(--blue);
+    transition: all .5s;
+}
+
+.line__button--svg {
+    width: 18px;
+    transition: all .5s;
+}

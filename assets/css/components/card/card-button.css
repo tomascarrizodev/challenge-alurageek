@@ -1,0 +1,10 @@
+.card__button {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: var(--bold);
+    transition: .5s all;
+}
+
+.card__button:hover {
+    color: var(--dark-blue);
+}
