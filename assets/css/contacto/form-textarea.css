@@ -3,6 +3,7 @@
     background: transparent;
     font-family: var(--raleway);
     width: 100%;
+    resize: none;
 }
 
 

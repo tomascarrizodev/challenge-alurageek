@@ -1,0 +1,28 @@
+.sesion__form__container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.sesion__form__container .form__label {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+    .sesion__form__container {
+        padding: 1rem;
+    }
+
+    .sesion__form__container .form__label {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sesion__form__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,11 @@
+.sesion__form__button {
+    width: 30%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .sesion__form__button {
+        width: auto;
+        margin: 0;
+    }
+}

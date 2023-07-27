@@ -3,6 +3,7 @@
     background: transparent;
     padding: .7rem;
     transition: .5s all;
+    cursor: pointer;
 }
 
 .btn--primary {

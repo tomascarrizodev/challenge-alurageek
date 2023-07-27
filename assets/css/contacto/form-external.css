@@ -3,6 +3,7 @@
     padding: 1rem;
     background: var(--white);
     border-bottom: 1px solid lightgrey;
+    cursor: text;
 }
 
 .form__external::after {
