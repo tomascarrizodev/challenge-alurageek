@@ -4,6 +4,7 @@
     padding: .7rem;
     transition: .5s all;
     cursor: pointer;
+    font-family: var(--raleway);
 }
 
 .btn--primary {

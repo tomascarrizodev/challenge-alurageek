@@ -1,0 +1,9 @@
+.btn.new-product__form__file__search {
+    text-align: center;
+    background: transparent;
+    transition: all .5s;
+}
+
+.btn.new-product__form__file__search:hover {
+    background: var(--white);
+}

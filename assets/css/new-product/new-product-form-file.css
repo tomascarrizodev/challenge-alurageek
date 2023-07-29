@@ -1,0 +1,21 @@
+.new-product__form__file {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.new-product__form__file--input {
+    display: none;
+}
+
+.new-product__form__file--or {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .new-product__form__file {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+}
