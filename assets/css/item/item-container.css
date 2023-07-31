@@ -1,0 +1,26 @@
+.item {
+    display: flex;
+}
+
+.item__container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .item__container {
+        flex-direction: row;
+        padding: 3rem 2rem;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .item__container {
+        width: 1136px;
+        margin: 0 auto;
+        padding-left: 0; 
+        padding-right: 0;
+    }
+}

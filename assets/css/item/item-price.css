@@ -1,0 +1,10 @@
+.item__price {
+    font-size: 20px;
+    font-weight: var(--bold);
+}
+
+@media screen and (min-width: 1360px) {
+    .item__price {
+        font-size: 24px;
+    }
+}

@@ -19,9 +19,3 @@
         grid-template-columns: repeat(6, 15.55%);
     }
 }
-
-@media screen and (min-width: 1440px) {
-    .line__container.products__line__container {
-        /* grid-template-columns: repeat(6, .5fr); */
-    }
-}

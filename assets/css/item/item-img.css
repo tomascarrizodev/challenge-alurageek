@@ -1,0 +1,18 @@
+.item__img {
+    position: absolute;
+    width: 100%;
+    bottom: -3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .item__img {
+        position: initial;
+        width: 20rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .item__img {
+        width: 30rem;
+    }
+}

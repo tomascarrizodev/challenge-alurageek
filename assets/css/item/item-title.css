@@ -1,0 +1,11 @@
+.item__title {
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    color: var(--black);
+}
+
+@media screen and (min-width: 1360px) {
+    .item__title {
+        font-size: 3rem;
+    }
+}
