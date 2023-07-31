@@ -13,7 +13,19 @@
 
 @media screen and (min-width: 375px) {
     .card {
-        width: 10rem
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .card {
+        width: 10.75rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 10.25rem;
     }
 }
 

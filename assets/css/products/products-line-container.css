@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    .line__container.products__line__container {
+        overflow-x: initial;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .line__container.products__line__container {
+        display: grid;
+        grid-template-columns: repeat(5, 18.8%);
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .line__container.products__line__container {
+        grid-template-columns: repeat(6, 15.55%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .line__container.products__line__container {
+        /* grid-template-columns: repeat(6, .5fr); */
+    }
+}

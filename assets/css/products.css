@@ -1,0 +1,18 @@
+.productos__container.products__container {
+    padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .productos__container.products__container {
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .productos__container.products__container {
+        width: 1136px;
+        margin: auto;
+        padding-left: 0; 
+        padding-right: 0; 
+    }
+}

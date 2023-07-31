@@ -7,6 +7,32 @@
     height: 176px;
 }
 
+.card__pic--trash, .card__pic--edit {
+    z-index: 2;
+    position: absolute;
+    top: 1rem;
+    height: 1.5rem;
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px #000c);
+}
+
+:where(.card__pic--edit, .card__pic--trash) path {
+    fill: var(--white);
+    transition: all .5s;
+}
+
+.card__pic--edit:hover path, .card__pic--trash:hover path {
+    fill: var(--light-grey);
+}
+
+.card__pic--edit {
+    right: 1rem;
+}
+
+.card__pic--trash {
+    right: 4rem;
+}
+
 @media screen and (min-width: 1024px) {
     .card__pic {
         height: auto;
