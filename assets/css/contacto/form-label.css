@@ -3,4 +3,20 @@
     color: var(--dark-grey);
     font-size: 18px;
     cursor: text;
+    transition: all .3s;
+}
+
+.form__label.form__label--writing {
+    color: var(--blue);
+    font-size: 12px;
+    transform: translateY(-0.5rem);
+}
+
+.form__label.form__label--fill {
+    font-size: 12px;
+    transform: translateY(-0.5rem);
+}
+
+.form__label.form__label--fill.form__label--error {
+    color: #c92424;
 }

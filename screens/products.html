@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="../assets/css/contacto/form-submit.css">
     <link rel="stylesheet" href="../assets/css/contacto/form-textarea.css">
     <link rel="stylesheet" href="../assets/css/contacto/form-title.css">
+    <link rel="stylesheet" href="../assets/css/contacto/form-error.css">
     <link rel="stylesheet" href="../assets/css/contacto/navegacion.css">
     <link rel="stylesheet" href="../assets/css/contacto/navegacion-header.css">
     <link rel="stylesheet" href="../assets/css/contacto/navegacion-list-enlace.css">
@@ -499,17 +500,19 @@
                         </ul>
                     </nav>
                 </article>
-                <form class="form">
+                <form class="form" data-contacto >
                     <fieldset class="form__container">
                         <legend class="form__title">Hable con nosotros</legend>
-                        <div class="form__external">
+                        <div id="contacto__nombre" class="form__external">
                             <label for="name" class="form__label">Nombre</label>
-                            <input type="text" id="name" class="form__input" autocomplete="off" />
+                            <input type="text" id="name" class="form__input contacto__input" autocomplete="off" data-tipo="nombre" maxlength="40" required />
                         </div>
-                        <div class="form__external">
+                        <p class="form__error form__error--nombre form__error--off">Información no válida</p>
+                        <div id="contacto__mensaje" class="form__external">
                             <label for="mensaje" class="form__label">Escribe tu mensaje</label>
-                            <textarea name="mensaje" id="mensaje" cols="30" class="form__textarea" rows="3"></textarea>
+                            <textarea name="mensaje" id="mensaje" cols="30" class="form__textarea contacto__input" rows="3" data-tipo="mensaje" maxlength="120" required ></textarea>
                         </div>
+                        <p class="form__error form__error--mensaje form__error--off">Información no válida</p>
                     </fieldset>
                     <button type="submit" class="form__submit btn btn--primary">Enviar mensaje</button>
                 </form>
@@ -521,6 +524,8 @@
             <p class="footer__description">2023</p>
         </footer>
     </div>
+    <script type="module" src="../assets/css/js/styles.js"></script>
+    <script type="module" src="../js/validation.js"></script>
 </body>
 
 </html>

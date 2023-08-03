@@ -1,4 +1,5 @@
 .form__input {
+    font-size: 18px;
     border: none;
     font-family: var(--raleway);
     background: transparent;
@@ -7,4 +8,8 @@
 
 .form__input:focus {
     outline: none;
+}
+
+.form__input.form__input--fill, .form__textarea.form__input--fill {
+    transform: translateY(8px); 
 }

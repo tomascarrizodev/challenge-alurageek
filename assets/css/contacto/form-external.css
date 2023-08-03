@@ -4,6 +4,7 @@
     background: var(--white);
     border-bottom: 1px solid lightgrey;
     cursor: text;
+    transition: 0.3s all;
 }
 
 .form__external::after {
@@ -11,8 +12,18 @@
     content: '';
     bottom: 0;
     left: 0;
-    height: 1px;
+    height: 2px;
     width: 0;
     background: var(--blue);
     z-index: 2;
+    transition: 0.3s all;
+}
+
+.form__external.form__external--writing::after {
+    width: 100%;
+}
+
+.form__external.form__external--writing.form__external--error::after {
+    background: #c92424;
+    width: 100%;
 }

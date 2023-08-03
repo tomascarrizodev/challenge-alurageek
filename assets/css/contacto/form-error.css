@@ -1,0 +1,13 @@
+.form__error {
+    color: #c92424;
+    font-size: 18px;
+    font-weight: var(--semibold);
+}
+
+.form__error--on {
+    display: block;
+}
+
+.form__error--off {
+    display: none;
+}
