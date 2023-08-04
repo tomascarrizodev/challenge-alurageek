@@ -2,13 +2,17 @@ const $ = (elem) => document.querySelector(elem);
 const $$ = (elems) => document.querySelectorAll(elems);
 
 const $$inputs = $$('.contacto__input');
+const sesions = $$('.sesion__input');
 
-export default $$inputs;
+const inputs = {
+    $$inputs,
+    sesions
+} ;
 
 function handleFocus(input) {
     const inputElem = $('#' + input.id);
-    const parent = $('#' + input.parentNode.id)
-    const label = parent.querySelector('label')
+    const parent = input.parentNode
+    const label = input.parentNode.querySelector('label')
 
     label.classList.add('form__label--writing');
     inputElem.classList.add('form__input--fill');
@@ -17,7 +21,7 @@ function handleFocus(input) {
 
 function handleFocusOut(input) {
     const inputElem = $('#' + input.id);
-    const parent = $('#' + input.parentNode.id)
+    const parent = input.parentNode
     const label = parent.querySelector('label')
 
     if (!input.validity.valid) {
@@ -41,3 +45,18 @@ $$inputs.forEach(input => {
         handleFocusOut(input)
     })
 })
+
+sesions.forEach(input => {
+    input.addEventListener('focus', () => {
+        handleFocus(input)
+        console.log(input)
+    })
+
+    input.addEventListener('blur', () => {
+        handleFocusOut(input)
+    })
+
+
+})
+
+export default inputs;

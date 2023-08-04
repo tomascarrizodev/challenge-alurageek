@@ -10,6 +10,15 @@
     font-size: 1rem;
 }
 
+.sesion__form__container .form__label.form__label--writing {
+    font-size: 12px;
+}
+
+.sesion__form__container .form__label.form__label--fill {
+    font-size: 12px;
+    transform: translateY(-0.5rem);
+}
+
 @media screen and (min-width: 375px) {
     .sesion__form__container {
         padding: 1rem;

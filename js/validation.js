@@ -1,8 +1,11 @@
-import $$inputs from "../assets/css/js/styles.js";
+import inputs from "../assets/css/js/styles.js";
+
+const { $$inputs, sesions } = inputs
 
 const errorTypes = [
     'valueMissing',
-    'tooLong'
+    'tooLong',
+    'patternMismatch'
 ]
 
 const errorMessages = {
@@ -13,10 +16,17 @@ const errorMessages = {
     mensaje: {
         valueMissing: 'Este campo no puede estar vacío',
         tooLong: 'El máximo de caracteres es de 120'
+    },
+    email: {
+        valueMissing: 'Este campo no puede estar vacío',
+        patternMismatch: 'El email ingresado no es válido'
+    },
+    password: {
+        valueMissing: 'Este campo no puede estar vacío'
     }
 }
 
-const validite = (input) => {
+const validate = (input) => {
     let span = input.parentNode.parentNode.querySelector('.form__error--' + input.dataset.tipo)
     if (!input.validity.valid) {
         errorTypes.forEach(err => {
@@ -33,7 +43,7 @@ const validite = (input) => {
 
 $$inputs.forEach(input => {
     input.addEventListener('blur', () => {
-        validite(input)
+        validate(input)
     })
 })
 
@@ -47,4 +57,17 @@ form.addEventListener('submit', e => {
         input.parentNode.querySelector('label').classList = 'form__label'
         input.parentNode.classList = 'form__external'
     })
+})
+
+sesions.forEach(input => {
+    input.addEventListener('blur', () => {
+        validate(input)
+    })
+})
+
+const login = document.querySelector('[data-login]');
+
+login.addEventListener('submit', e => {
+    e.preventDefault()
+    window.location.href = './products.html'
 })

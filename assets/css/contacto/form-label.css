@@ -13,6 +13,7 @@
 }
 
 .form__label.form__label--fill {
+    color: var(--dark-grey);
     font-size: 12px;
     transform: translateY(-0.5rem);
 }
